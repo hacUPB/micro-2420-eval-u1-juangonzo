@@ -26,3 +26,6 @@ Referencias:
 GeeksforGeeks, "General Purpose Registers" y "Different Classes of CPU Registers"
 TutorialsPoint, "What are the CPU general purpose registers?"
 Binary Terms, "What is Register Organization? What is Register? Types of Register"
+
+Descripcion componentes vistos:
+En el circuito podemos observar un computador compuesto por una CPU, una memoria ROM donde se carga el programa,Un clockque es la frecuencia a la que el procesadoresta funcionando, y otra memoria que guarda los datos donde se va a operar y las entradas de datos de los perfifericos.
