@@ -1,0 +1,21 @@
+        @i
+        M=1
+        @sum
+        M=0
+        @100
+        D=A
+        @i
+        D=D-M
+        @END
+        D;JLE
+        @i
+        D=M
+        @sum
+        M=D+M
+        @i
+        M=M+1
+        @4
+        0;JMP
+(END)
+        @END
+        0;JMP
