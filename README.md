@@ -29,3 +29,21 @@ Binary Terms, "What is Register Organization? What is Register? Types of Registe
 
 Descripcion componentes vistos:
 En el circuito podemos observar un computador compuesto por una CPU, una memoria ROM donde se carga el programa,Un clockque es la frecuencia a la que el procesadoresta funcionando, y otra memoria que guarda los datos donde se va a operar y las entradas de datos de los perfifericos.
+
+Fetch: Es ir a buscar la instruccion en la ROM. Se escribe la direccion de memoria donde esta la informacion en el registro A. Luego el registro "PC" me indica cual es el siguiente registro a realizar. El empieza en "0". Decode determina que es lo que hace la instruccion, si es tipo A o tipo C, etc.
+
+Para el tipo A puede direccionar 32kb registros. 
+
+Instruccion tipo A, almacena valores en el registro A y operaciones sencillas. Intruccion tipo C, puede asignar valores, Crear condicionales, saltos, cambiar el flujo del programa, entre otras cosas.
+
+lsl: rota a la izquierda(multiplicax2) pero ojo porque no guarda el simbolo
+lsr: rota a la derecha y llena de 0s a la izquierda
+asr: rota ala derecha pero es arimetico osea toma el simbolo
+ror: rota a la derecha pero lo que se sale entra al bit mas significativo
+movs: la s actualiza el registro de estado
+movw: para mover un numero de 16bits 
+movw: mueve el numero a los digitos menos significativos del registro
+movt: mueve el numero a la parte alta del registro
+str: store, almacenar en la memoria ram el dato ej. STR R1, [R0]. En la direccion de memoria R0 almacene el dato del registro R1
+strb: lo mismo que str pero solo  en un byte. ej STRB R2, [R0, #4] guarda la info del registro R2 en la direccion de memoria R0 y le añade 4
+strh: half word.una palabra es de 32 bits, hlaf word es 16 bit y byte 8 bits
