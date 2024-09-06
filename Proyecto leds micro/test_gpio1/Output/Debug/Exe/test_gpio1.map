@@ -1,0 +1,603 @@
+***********************************************************************************************
+***                                                                                         ***
+***                                    LINK INFORMATION                                     ***
+***                                                                                         ***
+***********************************************************************************************
+
+Linker version:
+
+  SEGGER ARM Linker 4.34.2 compiled Aug 31 2022 19:06:45
+  Copyright (c) 2017-2022 SEGGER Microcontroller GmbH    www.segger.com
+
+
+***********************************************************************************************
+***                                                                                         ***
+***                                     MODULE SUMMARY                                      ***
+***                                                                                         ***
+***********************************************************************************************
+
+Memory use by input file:
+
+  Object File                                       RX Code     RO Data     RW Data     ZI Data
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  MKE18F16_Startup.o                                     68                                    
+  MKE18F16_Vectors.o                                  1 192                                    
+  start.o                                               136                                    
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  Subtotal (3 objects)                                1 396                                    
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  Linker created (shared data, fills, blocks):                                            2 048
+  =============================================  ==========  ==========  ==========  ==========
+  Total:                                              1 396                               2 048
+  =============================================  ==========  ==========  ==========  ==========
+
+Memory use by archive member:
+
+Memory use by linker:
+
+  Description                                       RX Code     RO Data     RW Data     ZI Data
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  Memory for block 'stack'                                                                2 048
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  Subtotal (linker created):                                                              2 048
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  Objects (3 files)                                   1 396                                    
+  =============================================  ==========  ==========  ==========  ==========
+  Total:                                              1 396                               2 048
+  =============================================  ==========  ==========  ==========  ==========
+
+
+***********************************************************************************************
+***                                                                                         ***
+***                                     SECTION DETAIL                                      ***
+***                                                                                         ***
+***********************************************************************************************
+
+Sections by address:
+
+  Range              Symbol or [section] Name         Size  Al  Init  Ac  Object File
+  -----------------  -------------------------  ----------  --  ----  --  -----------
+  00000000-0000040f  _vectors                        1 040  512
+                                                                Code  RX  MKE18F16_Vectors.o
+  00000410-00000497  _start                            136   4  Code  RX  start.o
+  00000498-000004bf  HardFault_Handler                  40   4  Code  RX  MKE18F16_Startup.o
+  000004c0-000004c1  NMI_Handler                         2   2  Code  RX  MKE18F16_Vectors.o
+  000004c2-000004c3  SVC_Handler                         2   2  Code  RX  MKE18F16_Vectors.o
+  000004c4-000004c5  PendSV_Handler                      2   2  Code  RX  MKE18F16_Vectors.o
+  000004c6-000004c7  SysTick_Handler                     2   2  Code  RX  MKE18F16_Vectors.o
+  000004c8-000004c9  DMA0_IRQHandler                     2   2  Code  RX  MKE18F16_Vectors.o
+  000004ca-000004cb  DMA1_IRQHandler                     2   2  Code  RX  MKE18F16_Vectors.o
+  000004cc-000004cd  DMA2_IRQHandler                     2   2  Code  RX  MKE18F16_Vectors.o
+  000004ce-000004cf  DMA3_IRQHandler                     2   2  Code  RX  MKE18F16_Vectors.o
+  000004d0-000004d1  DMA4_IRQHandler                     2   2  Code  RX  MKE18F16_Vectors.o
+  000004d2-000004d3  DMA5_IRQHandler                     2   2  Code  RX  MKE18F16_Vectors.o
+  000004d4-000004d5  DMA6_IRQHandler                     2   2  Code  RX  MKE18F16_Vectors.o
+  000004d6-000004d7  DMA7_IRQHandler                     2   2  Code  RX  MKE18F16_Vectors.o
+  000004d8-000004d9  DMA8_IRQHandler                     2   2  Code  RX  MKE18F16_Vectors.o
+  000004da-000004db  DMA9_IRQHandler                     2   2  Code  RX  MKE18F16_Vectors.o
+  000004dc-000004dd  DMA10_IRQHandler                    2   2  Code  RX  MKE18F16_Vectors.o
+  000004de-000004df  DMA11_IRQHandler                    2   2  Code  RX  MKE18F16_Vectors.o
+  000004e0-000004e1  DMA12_IRQHandler                    2   2  Code  RX  MKE18F16_Vectors.o
+  000004e2-000004e3  DMA13_IRQHandler                    2   2  Code  RX  MKE18F16_Vectors.o
+  000004e4-000004e5  DMA14_IRQHandler                    2   2  Code  RX  MKE18F16_Vectors.o
+  000004e6-000004e7  DMA15_IRQHandler                    2   2  Code  RX  MKE18F16_Vectors.o
+  000004e8-000004e9  DMA_Error_IRQHandler                2   2  Code  RX  MKE18F16_Vectors.o
+  000004ea-000004eb  MCM_IRQHandler                      2   2  Code  RX  MKE18F16_Vectors.o
+  000004ec-000004ed  FTFE_IRQHandler                     2   2  Code  RX  MKE18F16_Vectors.o
+  000004ee-000004ef  Read_Collision_IRQHandler           2   2  Code  RX  MKE18F16_Vectors.o
+  000004f0-000004f1  LVD_LVW_IRQHandler                  2   2  Code  RX  MKE18F16_Vectors.o
+  000004f2-000004f3  Doublebit_Fault_IRQHandler
+                                                         2   2  Code  RX  MKE18F16_Vectors.o
+  000004f4-000004f5  WDOG_EWM_IRQHandler                 2   2  Code  RX  MKE18F16_Vectors.o
+  000004f6-000004f7  LPI2C0_IRQHandler                   2   2  Code  RX  MKE18F16_Vectors.o
+  000004f8-000004f9  LPI2C1_IRQHandler                   2   2  Code  RX  MKE18F16_Vectors.o
+  000004fa-000004fb  LPSPI0_IRQHandler                   2   2  Code  RX  MKE18F16_Vectors.o
+  000004fc-000004fd  LPSPI1_IRQHandler                   2   2  Code  RX  MKE18F16_Vectors.o
+  000004fe-000004ff  PWT_IRQHandler                      2   2  Code  RX  MKE18F16_Vectors.o
+  00000500-00000501  LPUART0_TX_IRQHandler               2   2  Code  RX  MKE18F16_Vectors.o
+  00000502-00000503  LPUART0_RX_IRQHandler               2   2  Code  RX  MKE18F16_Vectors.o
+  00000504-00000505  LPUART1_TX_IRQHandler               2   2  Code  RX  MKE18F16_Vectors.o
+  00000506-00000507  LPUART1_RX_IRQHandler               2   2  Code  RX  MKE18F16_Vectors.o
+  00000508-00000509  LPUART2_TX_IRQHandler               2   2  Code  RX  MKE18F16_Vectors.o
+  0000050a-0000050b  LPUART2_RX_IRQHandler               2   2  Code  RX  MKE18F16_Vectors.o
+  0000050c-0000050d  ADC0_IRQHandler                     2   2  Code  RX  MKE18F16_Vectors.o
+  0000050e-0000050f  CMP0_IRQHandler                     2   2  Code  RX  MKE18F16_Vectors.o
+  00000510-00000511  CMP1_IRQHandler                     2   2  Code  RX  MKE18F16_Vectors.o
+  00000512-00000513  FTM0_IRQHandler                     2   2  Code  RX  MKE18F16_Vectors.o
+  00000514-00000515  FTM1_IRQHandler                     2   2  Code  RX  MKE18F16_Vectors.o
+  00000516-00000517  FTM2_IRQHandler                     2   2  Code  RX  MKE18F16_Vectors.o
+  00000518-00000519  RTC_IRQHandler                      2   2  Code  RX  MKE18F16_Vectors.o
+  0000051a-0000051b  RTC_Seconds_IRQHandler              2   2  Code  RX  MKE18F16_Vectors.o
+  0000051c-0000051d  LPIT0_Ch0_IRQHandler                2   2  Code  RX  MKE18F16_Vectors.o
+  0000051e-0000051f  LPIT0_Ch1_IRQHandler                2   2  Code  RX  MKE18F16_Vectors.o
+  00000520-00000521  LPIT0_Ch2_IRQHandler                2   2  Code  RX  MKE18F16_Vectors.o
+  00000522-00000523  LPIT0_Ch3_IRQHandler                2   2  Code  RX  MKE18F16_Vectors.o
+  00000524-00000525  PDB0_IRQHandler                     2   2  Code  RX  MKE18F16_Vectors.o
+  00000526-00000527  DAC0_IRQHandler                     2   2  Code  RX  MKE18F16_Vectors.o
+  00000528-00000529  SCG_RCM_IRQHandler                  2   2  Code  RX  MKE18F16_Vectors.o
+  0000052a-0000052b  LPTMR0_IRQHandler                   2   2  Code  RX  MKE18F16_Vectors.o
+  0000052c-0000052d  PORTA_IRQHandler                    2   2  Code  RX  MKE18F16_Vectors.o
+  0000052e-0000052f  PORTB_IRQHandler                    2   2  Code  RX  MKE18F16_Vectors.o
+  00000530-00000531  PORTC_IRQHandler                    2   2  Code  RX  MKE18F16_Vectors.o
+  00000532-00000533  PORTD_IRQHandler                    2   2  Code  RX  MKE18F16_Vectors.o
+  00000534-00000535  PORTE_IRQHandler                    2   2  Code  RX  MKE18F16_Vectors.o
+  00000536-00000537  SWI_IRQHandler                      2   2  Code  RX  MKE18F16_Vectors.o
+  00000538-00000539  PDB1_IRQHandler                     2   2  Code  RX  MKE18F16_Vectors.o
+  0000053a-0000053b  FLEXIO_IRQHandler                   2   2  Code  RX  MKE18F16_Vectors.o
+  0000053c-0000053d  CMP2_IRQHandler                     2   2  Code  RX  MKE18F16_Vectors.o
+  0000053e-0000053f  FTM3_IRQHandler                     2   2  Code  RX  MKE18F16_Vectors.o
+  00000540-00000541  ADC1_IRQHandler                     2   2  Code  RX  MKE18F16_Vectors.o
+  00000542-00000543  ADC2_IRQHandler                     2   2  Code  RX  MKE18F16_Vectors.o
+  00000544-00000545  PDB2_IRQHandler                     2   2  Code  RX  MKE18F16_Vectors.o
+  00000546-00000547  CAN0_ORed_IRQHandler                2   2  Code  RX  MKE18F16_Vectors.o
+  00000548-00000549  CAN0_Error_IRQHandler               2   2  Code  RX  MKE18F16_Vectors.o
+  0000054a-0000054b  CAN0_Wake_Up_IRQHandler             2   2  Code  RX  MKE18F16_Vectors.o
+  0000054c-0000054d  CAN0_ORed_Message_buffer_IRQHandler
+                                                         2   2  Code  RX  MKE18F16_Vectors.o
+  0000054e-0000054f  CAN1_ORed_IRQHandler                2   2  Code  RX  MKE18F16_Vectors.o
+  00000550-00000551  CAN1_Error_IRQHandler               2   2  Code  RX  MKE18F16_Vectors.o
+  00000552-00000553  CAN1_Wake_Up_IRQHandler             2   2  Code  RX  MKE18F16_Vectors.o
+  00000554-00000555  CAN1_ORed_Message_buffer_IRQHandler
+                                                         2   2  Code  RX  MKE18F16_Vectors.o
+  00000556-00000557  Dummy_Handler                       2   2  Code  RX  MKE18F16_Vectors.o
+  00000558-00000573  reset_handler                      28   2  Code  RX  MKE18F16_Startup.o
+  00000574-200077ff  ( UNUSED .=.+536900236 )   536 900 236
+                                                             -  ----  -   -
+  20007800-20007fff  [.bss.block.stack]              2 048   8  None  ZI  [ Linker created ]
+
+
+***********************************************************************************************
+***                                                                                         ***
+***                                       SYMBOL LIST                                       ***
+***                                                                                         ***
+***********************************************************************************************
+
+Function symbols by name:
+
+  Symbol name                   Address        Size  Align  Type  Bd  Object File
+  -------------------------  ----------  ----------  -----  ----  --  -----------
+  ADC0_IRQHandler            0x0000050D                  2  Code  Wk  MKE18F16_Vectors.o
+  ADC1_IRQHandler            0x00000541                  2  Code  Wk  MKE18F16_Vectors.o
+  ADC2_IRQHandler            0x00000543                  2  Code  Wk  MKE18F16_Vectors.o
+  CAN0_Error_IRQHandler      0x00000549                  2  Code  Wk  MKE18F16_Vectors.o
+  CAN0_ORed_IRQHandler       0x00000547                  2  Code  Wk  MKE18F16_Vectors.o
+  CAN0_ORed_Message_buffer_IRQHandler
+                             0x0000054D                  2  Code  Wk  MKE18F16_Vectors.o
+  CAN0_Wake_Up_IRQHandler    0x0000054B                  2  Code  Wk  MKE18F16_Vectors.o
+  CAN1_Error_IRQHandler      0x00000551                  2  Code  Wk  MKE18F16_Vectors.o
+  CAN1_ORed_IRQHandler       0x0000054F                  2  Code  Wk  MKE18F16_Vectors.o
+  CAN1_ORed_Message_buffer_IRQHandler
+                             0x00000555                  2  Code  Wk  MKE18F16_Vectors.o
+  CAN1_Wake_Up_IRQHandler    0x00000553                  2  Code  Wk  MKE18F16_Vectors.o
+  CMP0_IRQHandler            0x0000050F                  2  Code  Wk  MKE18F16_Vectors.o
+  CMP1_IRQHandler            0x00000511                  2  Code  Wk  MKE18F16_Vectors.o
+  CMP2_IRQHandler            0x0000053D                  2  Code  Wk  MKE18F16_Vectors.o
+  DAC0_IRQHandler            0x00000527                  2  Code  Wk  MKE18F16_Vectors.o
+  DMA0_IRQHandler            0x000004C9                  2  Code  Wk  MKE18F16_Vectors.o
+  DMA10_IRQHandler           0x000004DD                  2  Code  Wk  MKE18F16_Vectors.o
+  DMA11_IRQHandler           0x000004DF                  2  Code  Wk  MKE18F16_Vectors.o
+  DMA12_IRQHandler           0x000004E1                  2  Code  Wk  MKE18F16_Vectors.o
+  DMA13_IRQHandler           0x000004E3                  2  Code  Wk  MKE18F16_Vectors.o
+  DMA14_IRQHandler           0x000004E5                  2  Code  Wk  MKE18F16_Vectors.o
+  DMA15_IRQHandler           0x000004E7                  2  Code  Wk  MKE18F16_Vectors.o
+  DMA1_IRQHandler            0x000004CB                  2  Code  Wk  MKE18F16_Vectors.o
+  DMA2_IRQHandler            0x000004CD                  2  Code  Wk  MKE18F16_Vectors.o
+  DMA3_IRQHandler            0x000004CF                  2  Code  Wk  MKE18F16_Vectors.o
+  DMA4_IRQHandler            0x000004D1                  2  Code  Wk  MKE18F16_Vectors.o
+  DMA5_IRQHandler            0x000004D3                  2  Code  Wk  MKE18F16_Vectors.o
+  DMA6_IRQHandler            0x000004D5                  2  Code  Wk  MKE18F16_Vectors.o
+  DMA7_IRQHandler            0x000004D7                  2  Code  Wk  MKE18F16_Vectors.o
+  DMA8_IRQHandler            0x000004D9                  2  Code  Wk  MKE18F16_Vectors.o
+  DMA9_IRQHandler            0x000004DB                  2  Code  Wk  MKE18F16_Vectors.o
+  DMA_Error_IRQHandler       0x000004E9                  2  Code  Wk  MKE18F16_Vectors.o
+  Doublebit_Fault_IRQHandler
+                             0x000004F3                  2  Code  Wk  MKE18F16_Vectors.o
+  Dummy_Handler              0x00000557                  2  Code  Wk  MKE18F16_Vectors.o
+  FLEXIO_IRQHandler          0x0000053B                  2  Code  Wk  MKE18F16_Vectors.o
+  FTFE_IRQHandler            0x000004ED                  2  Code  Wk  MKE18F16_Vectors.o
+  FTM0_IRQHandler            0x00000513                  2  Code  Wk  MKE18F16_Vectors.o
+  FTM1_IRQHandler            0x00000515                  2  Code  Wk  MKE18F16_Vectors.o
+  FTM2_IRQHandler            0x00000517                  2  Code  Wk  MKE18F16_Vectors.o
+  FTM3_IRQHandler            0x0000053F                  2  Code  Wk  MKE18F16_Vectors.o
+  HardFault_Handler          0x00000499                  4  Code  Wk  MKE18F16_Startup.o
+  LPI2C0_IRQHandler          0x000004F7                  2  Code  Wk  MKE18F16_Vectors.o
+  LPI2C1_IRQHandler          0x000004F9                  2  Code  Wk  MKE18F16_Vectors.o
+  LPIT0_Ch0_IRQHandler       0x0000051D                  2  Code  Wk  MKE18F16_Vectors.o
+  LPIT0_Ch1_IRQHandler       0x0000051F                  2  Code  Wk  MKE18F16_Vectors.o
+  LPIT0_Ch2_IRQHandler       0x00000521                  2  Code  Wk  MKE18F16_Vectors.o
+  LPIT0_Ch3_IRQHandler       0x00000523                  2  Code  Wk  MKE18F16_Vectors.o
+  LPSPI0_IRQHandler          0x000004FB                  2  Code  Wk  MKE18F16_Vectors.o
+  LPSPI1_IRQHandler          0x000004FD                  2  Code  Wk  MKE18F16_Vectors.o
+  LPTMR0_IRQHandler          0x0000052B                  2  Code  Wk  MKE18F16_Vectors.o
+  LPUART0_RX_IRQHandler      0x00000503                  2  Code  Wk  MKE18F16_Vectors.o
+  LPUART0_TX_IRQHandler      0x00000501                  2  Code  Wk  MKE18F16_Vectors.o
+  LPUART1_RX_IRQHandler      0x00000507                  2  Code  Wk  MKE18F16_Vectors.o
+  LPUART1_TX_IRQHandler      0x00000505                  2  Code  Wk  MKE18F16_Vectors.o
+  LPUART2_RX_IRQHandler      0x0000050B                  2  Code  Wk  MKE18F16_Vectors.o
+  LPUART2_TX_IRQHandler      0x00000509                  2  Code  Wk  MKE18F16_Vectors.o
+  LVD_LVW_IRQHandler         0x000004F1                  2  Code  Wk  MKE18F16_Vectors.o
+  MCM_IRQHandler             0x000004EB                  2  Code  Wk  MKE18F16_Vectors.o
+  NMI_Handler                0x000004C1                  2  Code  Wk  MKE18F16_Vectors.o
+  PDB0_IRQHandler            0x00000525                  2  Code  Wk  MKE18F16_Vectors.o
+  PDB1_IRQHandler            0x00000539                  2  Code  Wk  MKE18F16_Vectors.o
+  PDB2_IRQHandler            0x00000545                  2  Code  Wk  MKE18F16_Vectors.o
+  PORTA_IRQHandler           0x0000052D                  2  Code  Wk  MKE18F16_Vectors.o
+  PORTB_IRQHandler           0x0000052F                  2  Code  Wk  MKE18F16_Vectors.o
+  PORTC_IRQHandler           0x00000531                  2  Code  Wk  MKE18F16_Vectors.o
+  PORTD_IRQHandler           0x00000533                  2  Code  Wk  MKE18F16_Vectors.o
+  PORTE_IRQHandler           0x00000535                  2  Code  Wk  MKE18F16_Vectors.o
+  PWT_IRQHandler             0x000004FF                  2  Code  Wk  MKE18F16_Vectors.o
+  PendSV_Handler             0x000004C5                  2  Code  Wk  MKE18F16_Vectors.o
+  RTC_IRQHandler             0x00000519                  2  Code  Wk  MKE18F16_Vectors.o
+  RTC_Seconds_IRQHandler     0x0000051B                  2  Code  Wk  MKE18F16_Vectors.o
+  Read_Collision_IRQHandler  0x000004EF                  2  Code  Wk  MKE18F16_Vectors.o
+  Reset_Handler              0x00000559                  2  Code  Gb  MKE18F16_Startup.o
+  SCG_RCM_IRQHandler         0x00000529                  2  Code  Wk  MKE18F16_Vectors.o
+  SVC_Handler                0x000004C3                  2  Code  Wk  MKE18F16_Vectors.o
+  SWI_IRQHandler             0x00000537                  2  Code  Wk  MKE18F16_Vectors.o
+  SysTick_Handler            0x000004C7                  2  Code  Wk  MKE18F16_Vectors.o
+  WDOG_EWM_IRQHandler        0x000004F5                  2  Code  Wk  MKE18F16_Vectors.o
+  _start                     0x00000411                  4  Code  Gb  start.o
+  reset_handler              0x00000559                  2  Code  Gb  MKE18F16_Startup.o
+
+Function symbols by address:
+
+     Address  Symbol name                      Size  Align  Type  Bd  Object File
+  ----------  -------------------------  ----------  -----  ----  --  -----------
+  0x00000411  _start                                     4  Code  Gb  start.o
+  0x00000499  HardFault_Handler                          4  Code  Wk  MKE18F16_Startup.o
+  0x000004C1  NMI_Handler                                2  Code  Wk  MKE18F16_Vectors.o
+  0x000004C3  SVC_Handler                                2  Code  Wk  MKE18F16_Vectors.o
+  0x000004C5  PendSV_Handler                             2  Code  Wk  MKE18F16_Vectors.o
+  0x000004C7  SysTick_Handler                            2  Code  Wk  MKE18F16_Vectors.o
+  0x000004C9  DMA0_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  0x000004CB  DMA1_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  0x000004CD  DMA2_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  0x000004CF  DMA3_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  0x000004D1  DMA4_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  0x000004D3  DMA5_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  0x000004D5  DMA6_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  0x000004D7  DMA7_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  0x000004D9  DMA8_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  0x000004DB  DMA9_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  0x000004DD  DMA10_IRQHandler                           2  Code  Wk  MKE18F16_Vectors.o
+  0x000004DF  DMA11_IRQHandler                           2  Code  Wk  MKE18F16_Vectors.o
+  0x000004E1  DMA12_IRQHandler                           2  Code  Wk  MKE18F16_Vectors.o
+  0x000004E3  DMA13_IRQHandler                           2  Code  Wk  MKE18F16_Vectors.o
+  0x000004E5  DMA14_IRQHandler                           2  Code  Wk  MKE18F16_Vectors.o
+  0x000004E7  DMA15_IRQHandler                           2  Code  Wk  MKE18F16_Vectors.o
+  0x000004E9  DMA_Error_IRQHandler                       2  Code  Wk  MKE18F16_Vectors.o
+  0x000004EB  MCM_IRQHandler                             2  Code  Wk  MKE18F16_Vectors.o
+  0x000004ED  FTFE_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  0x000004EF  Read_Collision_IRQHandler                  2  Code  Wk  MKE18F16_Vectors.o
+  0x000004F1  LVD_LVW_IRQHandler                         2  Code  Wk  MKE18F16_Vectors.o
+  0x000004F3  Doublebit_Fault_IRQHandler
+                                                         2  Code  Wk  MKE18F16_Vectors.o
+  0x000004F5  WDOG_EWM_IRQHandler                        2  Code  Wk  MKE18F16_Vectors.o
+  0x000004F7  LPI2C0_IRQHandler                          2  Code  Wk  MKE18F16_Vectors.o
+  0x000004F9  LPI2C1_IRQHandler                          2  Code  Wk  MKE18F16_Vectors.o
+  0x000004FB  LPSPI0_IRQHandler                          2  Code  Wk  MKE18F16_Vectors.o
+  0x000004FD  LPSPI1_IRQHandler                          2  Code  Wk  MKE18F16_Vectors.o
+  0x000004FF  PWT_IRQHandler                             2  Code  Wk  MKE18F16_Vectors.o
+  0x00000501  LPUART0_TX_IRQHandler                      2  Code  Wk  MKE18F16_Vectors.o
+  0x00000503  LPUART0_RX_IRQHandler                      2  Code  Wk  MKE18F16_Vectors.o
+  0x00000505  LPUART1_TX_IRQHandler                      2  Code  Wk  MKE18F16_Vectors.o
+  0x00000507  LPUART1_RX_IRQHandler                      2  Code  Wk  MKE18F16_Vectors.o
+  0x00000509  LPUART2_TX_IRQHandler                      2  Code  Wk  MKE18F16_Vectors.o
+  0x0000050B  LPUART2_RX_IRQHandler                      2  Code  Wk  MKE18F16_Vectors.o
+  0x0000050D  ADC0_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  0x0000050F  CMP0_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  0x00000511  CMP1_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  0x00000513  FTM0_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  0x00000515  FTM1_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  0x00000517  FTM2_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  0x00000519  RTC_IRQHandler                             2  Code  Wk  MKE18F16_Vectors.o
+  0x0000051B  RTC_Seconds_IRQHandler                     2  Code  Wk  MKE18F16_Vectors.o
+  0x0000051D  LPIT0_Ch0_IRQHandler                       2  Code  Wk  MKE18F16_Vectors.o
+  0x0000051F  LPIT0_Ch1_IRQHandler                       2  Code  Wk  MKE18F16_Vectors.o
+  0x00000521  LPIT0_Ch2_IRQHandler                       2  Code  Wk  MKE18F16_Vectors.o
+  0x00000523  LPIT0_Ch3_IRQHandler                       2  Code  Wk  MKE18F16_Vectors.o
+  0x00000525  PDB0_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  0x00000527  DAC0_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  0x00000529  SCG_RCM_IRQHandler                         2  Code  Wk  MKE18F16_Vectors.o
+  0x0000052B  LPTMR0_IRQHandler                          2  Code  Wk  MKE18F16_Vectors.o
+  0x0000052D  PORTA_IRQHandler                           2  Code  Wk  MKE18F16_Vectors.o
+  0x0000052F  PORTB_IRQHandler                           2  Code  Wk  MKE18F16_Vectors.o
+  0x00000531  PORTC_IRQHandler                           2  Code  Wk  MKE18F16_Vectors.o
+  0x00000533  PORTD_IRQHandler                           2  Code  Wk  MKE18F16_Vectors.o
+  0x00000535  PORTE_IRQHandler                           2  Code  Wk  MKE18F16_Vectors.o
+  0x00000537  SWI_IRQHandler                             2  Code  Wk  MKE18F16_Vectors.o
+  0x00000539  PDB1_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  0x0000053B  FLEXIO_IRQHandler                          2  Code  Wk  MKE18F16_Vectors.o
+  0x0000053D  CMP2_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  0x0000053F  FTM3_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  0x00000541  ADC1_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  0x00000543  ADC2_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  0x00000545  PDB2_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  0x00000547  CAN0_ORed_IRQHandler                       2  Code  Wk  MKE18F16_Vectors.o
+  0x00000549  CAN0_Error_IRQHandler                      2  Code  Wk  MKE18F16_Vectors.o
+  0x0000054B  CAN0_Wake_Up_IRQHandler                    2  Code  Wk  MKE18F16_Vectors.o
+  0x0000054D  CAN0_ORed_Message_buffer_IRQHandler
+                                                         2  Code  Wk  MKE18F16_Vectors.o
+  0x0000054F  CAN1_ORed_IRQHandler                       2  Code  Wk  MKE18F16_Vectors.o
+  0x00000551  CAN1_Error_IRQHandler                      2  Code  Wk  MKE18F16_Vectors.o
+  0x00000553  CAN1_Wake_Up_IRQHandler                    2  Code  Wk  MKE18F16_Vectors.o
+  0x00000555  CAN1_ORed_Message_buffer_IRQHandler
+                                                         2  Code  Wk  MKE18F16_Vectors.o
+  0x00000557  Dummy_Handler                              2  Code  Wk  MKE18F16_Vectors.o
+  0x00000559  reset_handler                              2  Code  Gb  MKE18F16_Startup.o
+  0x00000559  Reset_Handler                              2  Code  Gb  MKE18F16_Startup.o
+
+Function symbols by descending size:
+
+  Symbol name                      Size  Align  Type  Bd  Object File
+  -------------------------  ----------  -----  ----  --  -----------
+  ADC0_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  ADC1_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  ADC2_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  CAN0_Error_IRQHandler                      2  Code  Wk  MKE18F16_Vectors.o
+  CAN0_ORed_IRQHandler                       2  Code  Wk  MKE18F16_Vectors.o
+  CAN0_ORed_Message_buffer_IRQHandler
+                                             2  Code  Wk  MKE18F16_Vectors.o
+  CAN0_Wake_Up_IRQHandler                    2  Code  Wk  MKE18F16_Vectors.o
+  CAN1_Error_IRQHandler                      2  Code  Wk  MKE18F16_Vectors.o
+  CAN1_ORed_IRQHandler                       2  Code  Wk  MKE18F16_Vectors.o
+  CAN1_ORed_Message_buffer_IRQHandler
+                                             2  Code  Wk  MKE18F16_Vectors.o
+  CAN1_Wake_Up_IRQHandler                    2  Code  Wk  MKE18F16_Vectors.o
+  CMP0_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  CMP1_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  CMP2_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  DAC0_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  DMA0_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  DMA10_IRQHandler                           2  Code  Wk  MKE18F16_Vectors.o
+  DMA11_IRQHandler                           2  Code  Wk  MKE18F16_Vectors.o
+  DMA12_IRQHandler                           2  Code  Wk  MKE18F16_Vectors.o
+  DMA13_IRQHandler                           2  Code  Wk  MKE18F16_Vectors.o
+  DMA14_IRQHandler                           2  Code  Wk  MKE18F16_Vectors.o
+  DMA15_IRQHandler                           2  Code  Wk  MKE18F16_Vectors.o
+  DMA1_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  DMA2_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  DMA3_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  DMA4_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  DMA5_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  DMA6_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  DMA7_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  DMA8_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  DMA9_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  DMA_Error_IRQHandler                       2  Code  Wk  MKE18F16_Vectors.o
+  Doublebit_Fault_IRQHandler
+                                             2  Code  Wk  MKE18F16_Vectors.o
+  Dummy_Handler                              2  Code  Wk  MKE18F16_Vectors.o
+  FLEXIO_IRQHandler                          2  Code  Wk  MKE18F16_Vectors.o
+  FTFE_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  FTM0_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  FTM1_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  FTM2_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  FTM3_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  HardFault_Handler                          4  Code  Wk  MKE18F16_Startup.o
+  LPI2C0_IRQHandler                          2  Code  Wk  MKE18F16_Vectors.o
+  LPI2C1_IRQHandler                          2  Code  Wk  MKE18F16_Vectors.o
+  LPIT0_Ch0_IRQHandler                       2  Code  Wk  MKE18F16_Vectors.o
+  LPIT0_Ch1_IRQHandler                       2  Code  Wk  MKE18F16_Vectors.o
+  LPIT0_Ch2_IRQHandler                       2  Code  Wk  MKE18F16_Vectors.o
+  LPIT0_Ch3_IRQHandler                       2  Code  Wk  MKE18F16_Vectors.o
+  LPSPI0_IRQHandler                          2  Code  Wk  MKE18F16_Vectors.o
+  LPSPI1_IRQHandler                          2  Code  Wk  MKE18F16_Vectors.o
+  LPTMR0_IRQHandler                          2  Code  Wk  MKE18F16_Vectors.o
+  LPUART0_RX_IRQHandler                      2  Code  Wk  MKE18F16_Vectors.o
+  LPUART0_TX_IRQHandler                      2  Code  Wk  MKE18F16_Vectors.o
+  LPUART1_RX_IRQHandler                      2  Code  Wk  MKE18F16_Vectors.o
+  LPUART1_TX_IRQHandler                      2  Code  Wk  MKE18F16_Vectors.o
+  LPUART2_RX_IRQHandler                      2  Code  Wk  MKE18F16_Vectors.o
+  LPUART2_TX_IRQHandler                      2  Code  Wk  MKE18F16_Vectors.o
+  LVD_LVW_IRQHandler                         2  Code  Wk  MKE18F16_Vectors.o
+  MCM_IRQHandler                             2  Code  Wk  MKE18F16_Vectors.o
+  NMI_Handler                                2  Code  Wk  MKE18F16_Vectors.o
+  PDB0_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  PDB1_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  PDB2_IRQHandler                            2  Code  Wk  MKE18F16_Vectors.o
+  PORTA_IRQHandler                           2  Code  Wk  MKE18F16_Vectors.o
+  PORTB_IRQHandler                           2  Code  Wk  MKE18F16_Vectors.o
+  PORTC_IRQHandler                           2  Code  Wk  MKE18F16_Vectors.o
+  PORTD_IRQHandler                           2  Code  Wk  MKE18F16_Vectors.o
+  PORTE_IRQHandler                           2  Code  Wk  MKE18F16_Vectors.o
+  PWT_IRQHandler                             2  Code  Wk  MKE18F16_Vectors.o
+  PendSV_Handler                             2  Code  Wk  MKE18F16_Vectors.o
+  RTC_IRQHandler                             2  Code  Wk  MKE18F16_Vectors.o
+  RTC_Seconds_IRQHandler                     2  Code  Wk  MKE18F16_Vectors.o
+  Read_Collision_IRQHandler                  2  Code  Wk  MKE18F16_Vectors.o
+  Reset_Handler                              2  Code  Gb  MKE18F16_Startup.o
+  SCG_RCM_IRQHandler                         2  Code  Wk  MKE18F16_Vectors.o
+  SVC_Handler                                2  Code  Wk  MKE18F16_Vectors.o
+  SWI_IRQHandler                             2  Code  Wk  MKE18F16_Vectors.o
+  SysTick_Handler                            2  Code  Wk  MKE18F16_Vectors.o
+  WDOG_EWM_IRQHandler                        2  Code  Wk  MKE18F16_Vectors.o
+  _start                                     4  Code  Gb  start.o
+  reset_handler                              2  Code  Gb  MKE18F16_Startup.o
+
+Untyped symbols by name:
+
+  Symbol name                     Value        Size  Align  Type  Bd  Object File
+  -------------------------  ----------  ----------  -----  ----  --  -----------
+  BackDoorKey                0x00000400                512  Code  Lc  MKE18F16_Vectors.o
+  FDPROT                     0x0000040F                512  Code  Lc  MKE18F16_Vectors.o
+  FEPROT                     0x0000040E                512  Code  Lc  MKE18F16_Vectors.o
+  FOPT                       0x0000040D                512  Code  Lc  MKE18F16_Vectors.o
+  FPROT                      0x00000408                512  Code  Lc  MKE18F16_Vectors.o
+  FSEC                       0x0000040C                512  Code  Lc  MKE18F16_Vectors.o
+  __FLASH1_segment_end__     0x00080000                     ----  Gb  [ Linker created ]
+  __FLASH1_segment_size__    0x00080000                     ----  Gb  [ Linker created ]
+  __FLASH1_segment_start__   0x00000000                     ----  Gb  [ Linker created ]
+  __FLASH1_segment_used_end__
+                             0x00000574                     ----  Gb  [ Linker created ]
+  __FLASH1_segment_used_size__
+                             0x00000574                     ----  Gb  [ Linker created ]
+  __FLASH1_segment_used_start__
+                             0x00000000                     ----  Gb  [ Linker created ]
+  __FLASH2_segment_end__     0x10010000                     ----  Gb  [ Linker created ]
+  __FLASH2_segment_size__    0x00010000                     ----  Gb  [ Linker created ]
+  __FLASH2_segment_start__   0x10000000                     ----  Gb  [ Linker created ]
+  __FLASH2_segment_used_end__
+                             0x10000000                     ----  Gb  [ Linker created ]
+  __FLASH2_segment_used_size__
+                             0x00000000                     ----  Gb  [ Linker created ]
+  __FLASH2_segment_used_start__
+                             0x10000000                     ----  Gb  [ Linker created ]
+  __FLASH_segment_end__      0x10010000                     ----  Gb  [ Linker created ]
+  __FLASH_segment_size__     0x10010000                     ----  Gb  [ Linker created ]
+  __FLASH_segment_start__    0x00000000                     ----  Gb  [ Linker created ]
+  __FLASH_segment_used_end__
+                             0x00000574                     ----  Gb  [ Linker created ]
+  __FLASH_segment_used_size__
+                             0x00000574                     ----  Gb  [ Linker created ]
+  __FLASH_segment_used_start__
+                             0x00000000                     ----  Gb  [ Linker created ]
+  __HEAPSIZE__               0x00000000                     ----  Gb  [ Linker created ]
+  __RAM1_segment_end__       0x14001000                     ----  Gb  [ Linker created ]
+  __RAM1_segment_size__      0x00001000                     ----  Gb  [ Linker created ]
+  __RAM1_segment_start__     0x14000000                     ----  Gb  [ Linker created ]
+  __RAM1_segment_used_end__  0x14000000                     ----  Gb  [ Linker created ]
+  __RAM1_segment_used_size__
+                             0x00000000                     ----  Gb  [ Linker created ]
+  __RAM1_segment_used_start__
+                             0x14000000                     ----  Gb  [ Linker created ]
+  __RAM2_segment_end__       0x20000000                     ----  Gb  [ Linker created ]
+  __RAM2_segment_size__      0x00008000                     ----  Gb  [ Linker created ]
+  __RAM2_segment_start__     0x1FFF8000                     ----  Gb  [ Linker created ]
+  __RAM2_segment_used_end__  0x1FFF8000                     ----  Gb  [ Linker created ]
+  __RAM2_segment_used_size__
+                             0x00000000                     ----  Gb  [ Linker created ]
+  __RAM2_segment_used_start__
+                             0x1FFF8000                     ----  Gb  [ Linker created ]
+  __RAM3_segment_end__       0x20008000                     ----  Gb  [ Linker created ]
+  __RAM3_segment_size__      0x00008000                     ----  Gb  [ Linker created ]
+  __RAM3_segment_start__     0x20000000                     ----  Gb  [ Linker created ]
+  __RAM3_segment_used_end__  0x20008000                     ----  Gb  [ Linker created ]
+  __RAM3_segment_used_size__
+                             0x00000800                     ----  Gb  [ Linker created ]
+  __RAM3_segment_used_start__
+                             0x20007800                     ----  Gb  [ Linker created ]
+  __RAM_segment_end__        0x20008000                     ----  Gb  [ Linker created ]
+  __RAM_segment_size__       0x0C008000                     ----  Gb  [ Linker created ]
+  __RAM_segment_start__      0x14000000                     ----  Gb  [ Linker created ]
+  __RAM_segment_used_end__   0x20008000                     ----  Gb  [ Linker created ]
+  __RAM_segment_used_size__  0x00000800                     ----  Gb  [ Linker created ]
+  __RAM_segment_used_start__
+                             0x20007800                     ----  Gb  [ Linker created ]
+  __STACKSIZE_PROCESS__      0x00000000                     ----  Gb  [ Linker created ]
+  __STACKSIZE__              0x00000800                     ----  Gb  [ Linker created ]
+  __stack_end__              0x20008000                     ----  Gb  [ Linker created ]
+  __thread_pointer$          0x00000000                     ----  Gb  [ Linker created ]
+  _vectors                   0x00000000     [1 040]    512  Code  Gb  MKE18F16_Vectors.o
+  _vectors_end               0x000001A4                512  Code  Lc  MKE18F16_Vectors.o
+  escribir_led               0x0000047A                  4  Code  Lc  start.o
+  init_clks                  0x00000426                  4  Code  Lc  start.o
+  init_gpio                  0x00000454                  4  Code  Lc  start.o
+  init_ports                 0x00000438                  4  Code  Lc  start.o
+  leer_pulsador              0x0000046C                  4  Code  Lc  start.o
+  main_loop                  0x0000041C                  4  Code  Lc  start.o
+
+Untyped symbols by address:
+
+       Value  Symbol name                      Size  Align  Type  Bd  Object File
+  ----------  -------------------------  ----------  -----  ----  --  -----------
+  0x00000000  _vectors                      [1 040]    512  Code  Gb  MKE18F16_Vectors.o
+  0x00000000  __thread_pointer$                             ----  Gb  [ Linker created ]
+  0x00000000  __STACKSIZE_PROCESS__                         ----  Gb  [ Linker created ]
+  0x00000000  __RAM2_segment_used_size__
+                                                            ----  Gb  [ Linker created ]
+  0x00000000  __RAM1_segment_used_size__
+                                                            ----  Gb  [ Linker created ]
+  0x00000000  __HEAPSIZE__                                  ----  Gb  [ Linker created ]
+  0x00000000  __FLASH_segment_used_start__
+                                                            ----  Gb  [ Linker created ]
+  0x00000000  __FLASH_segment_start__                       ----  Gb  [ Linker created ]
+  0x00000000  __FLASH2_segment_used_size__
+                                                            ----  Gb  [ Linker created ]
+  0x00000000  __FLASH1_segment_used_start__
+                                                            ----  Gb  [ Linker created ]
+  0x00000000  __FLASH1_segment_start__                      ----  Gb  [ Linker created ]
+  0x000001A4  _vectors_end                             512  Code  Lc  MKE18F16_Vectors.o
+  0x00000400  BackDoorKey                              512  Code  Lc  MKE18F16_Vectors.o
+  0x00000408  FPROT                                    512  Code  Lc  MKE18F16_Vectors.o
+  0x0000040C  FSEC                                     512  Code  Lc  MKE18F16_Vectors.o
+  0x0000040D  FOPT                                     512  Code  Lc  MKE18F16_Vectors.o
+  0x0000040E  FEPROT                                   512  Code  Lc  MKE18F16_Vectors.o
+  0x0000040F  FDPROT                                   512  Code  Lc  MKE18F16_Vectors.o
+  0x0000041C  main_loop                                  4  Code  Lc  start.o
+  0x00000426  init_clks                                  4  Code  Lc  start.o
+  0x00000438  init_ports                                 4  Code  Lc  start.o
+  0x00000454  init_gpio                                  4  Code  Lc  start.o
+  0x0000046C  leer_pulsador                              4  Code  Lc  start.o
+  0x0000047A  escribir_led                               4  Code  Lc  start.o
+  0x00000574  __FLASH_segment_used_size__
+                                                            ----  Gb  [ Linker created ]
+  0x00000574  __FLASH_segment_used_end__
+                                                            ----  Gb  [ Linker created ]
+  0x00000574  __FLASH1_segment_used_size__
+                                                            ----  Gb  [ Linker created ]
+  0x00000574  __FLASH1_segment_used_end__
+                                                            ----  Gb  [ Linker created ]
+  0x00000800  __STACKSIZE__                                 ----  Gb  [ Linker created ]
+  0x00000800  __RAM_segment_used_size__                     ----  Gb  [ Linker created ]
+  0x00000800  __RAM3_segment_used_size__
+                                                            ----  Gb  [ Linker created ]
+  0x00001000  __RAM1_segment_size__                         ----  Gb  [ Linker created ]
+  0x00008000  __RAM3_segment_size__                         ----  Gb  [ Linker created ]
+  0x00008000  __RAM2_segment_size__                         ----  Gb  [ Linker created ]
+  0x00010000  __FLASH2_segment_size__                       ----  Gb  [ Linker created ]
+  0x00080000  __FLASH1_segment_size__                       ----  Gb  [ Linker created ]
+  0x00080000  __FLASH1_segment_end__                        ----  Gb  [ Linker created ]
+  0x0C008000  __RAM_segment_size__                          ----  Gb  [ Linker created ]
+  0x10000000  __FLASH2_segment_used_start__
+                                                            ----  Gb  [ Linker created ]
+  0x10000000  __FLASH2_segment_used_end__
+                                                            ----  Gb  [ Linker created ]
+  0x10000000  __FLASH2_segment_start__                      ----  Gb  [ Linker created ]
+  0x10010000  __FLASH_segment_size__                        ----  Gb  [ Linker created ]
+  0x10010000  __FLASH_segment_end__                         ----  Gb  [ Linker created ]
+  0x10010000  __FLASH2_segment_end__                        ----  Gb  [ Linker created ]
+  0x14000000  __RAM_segment_start__                         ----  Gb  [ Linker created ]
+  0x14000000  __RAM1_segment_used_start__
+                                                            ----  Gb  [ Linker created ]
+  0x14000000  __RAM1_segment_used_end__                     ----  Gb  [ Linker created ]
+  0x14000000  __RAM1_segment_start__                        ----  Gb  [ Linker created ]
+  0x14001000  __RAM1_segment_end__                          ----  Gb  [ Linker created ]
+  0x1FFF8000  __RAM2_segment_used_start__
+                                                            ----  Gb  [ Linker created ]
+  0x1FFF8000  __RAM2_segment_used_end__                     ----  Gb  [ Linker created ]
+  0x1FFF8000  __RAM2_segment_start__                        ----  Gb  [ Linker created ]
+  0x20000000  __RAM3_segment_start__                        ----  Gb  [ Linker created ]
+  0x20000000  __RAM2_segment_end__                          ----  Gb  [ Linker created ]
+  0x20007800  __RAM_segment_used_start__
+                                                            ----  Gb  [ Linker created ]
+  0x20007800  __RAM3_segment_used_start__
+                                                            ----  Gb  [ Linker created ]
+  0x20008000  __stack_end__                                 ----  Gb  [ Linker created ]
+  0x20008000  __RAM_segment_used_end__                      ----  Gb  [ Linker created ]
+  0x20008000  __RAM_segment_end__                           ----  Gb  [ Linker created ]
+  0x20008000  __RAM3_segment_used_end__                     ----  Gb  [ Linker created ]
+  0x20008000  __RAM3_segment_end__                          ----  Gb  [ Linker created ]
+
+
+***********************************************************************************************
+***                                                                                         ***
+***                                      LINK SUMMARY                                       ***
+***                                                                                         ***
+***********************************************************************************************
+
+Memory breakdown:
+
+    1 396 bytes read-only  code    + 
+        0 bytes read-only  data    =   1 396 bytes read-only (total)
+    2 048 bytes read-write data
+
+Region summary:
+
+  Name        Range                     Size                 Used               Unused       Alignment Loss
+  ----------  -----------------  -----------  -------------------  -------------------  -------------------
+  FLASH1      00000000-0007ffff      524 288        1 396   0.27%      522 892  99.73%            0   0.00%
+  RAM3        20000000-20007fff       32 768        2 048   6.25%       30 720  93.75%            0   0.00%
+
+Link complete: 0 errors, 0 warnings, 0 remarks
